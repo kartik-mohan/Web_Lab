@@ -1,0 +1,66 @@
+<script> 
+function Validation()                                    
+{ 
+    var name = document.forms["RegForm"]["name"];
+	var user = document.forms["RegForm"]["username"];
+    var email = document.forms["RegForm"]["email"];    
+    var pswd = document.forms["RegForm"]["password"];    
+   
+    if (name.value == "")                                  
+    { 
+	    window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    }
+
+    if (user.value == "")                                  
+    { 
+	    window.alert("Please enter your username."); 
+        user.focus(); 
+        return false; 
+    }	
+       
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (pswd.value == "")                           
+    { 
+        window.alert("Please enter your password."); 
+        pswd.focus(); 
+        return false; 
+    }  	
+   
+    return true; 
+}
+
+function  Validate()
+{
+	var user1 = document.forms["LoginForm"]["username1"]; 
+    var pswd1 = document.forms["LoginForm"]["password1"]; 
+
+	if (user1.value == "")                                  
+    { 
+	    window.alert("Please enter your username."); 
+        user1.focus(); 
+        return false; 
+    }
+	
+	if (pswd1.value == "")                           
+    { 
+        window.alert("Please enter your password."); 
+        pswd1.focus(); 
+        return false; 
+    }
+	    return true; 
+}
+
+function contact()
+    {
+      window.alert("You are navigating to contact us page.");
+    }
+
+</script>
