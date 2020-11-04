@@ -1,0 +1,15 @@
+   <script> 
+	function Validation()                                    
+	{   
+    var id = document.forms["ForgotForm"]["email"];    
+   
+    if (id.value == "")                           
+    { 
+        window.alert("Please enter your Email Id"); 
+        id.focus(); 
+        return false; 
+    }  	
+   
+    return true; 
+	}
+</script>
